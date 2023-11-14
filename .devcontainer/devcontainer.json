@@ -1,0 +1,16 @@
+{
+  "name": "rails",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "rails",
+  "workspaceFolder": "/app",
+  "extensions": [],
+  "forwardPorts": [3000, 5433],
+  "settings": {
+    "editor.tabSize": 2,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "editor.formatOnSave": true,
+  }
+  // "initializeCommand": "if [ ! -f .devcontainer/.env ];then cp .devcontainer/.env.sample .devcontainer/.env;fi",
+}
