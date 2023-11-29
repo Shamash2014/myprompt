@@ -6,13 +6,12 @@
     "poetry@latest"
   ],
   "env": {
-    "DATABASE_HOST":     "localhost",
-    "DATABASE_USER":     "root",
-    "DATABASE_PASSWORD": "password"
+    "ES_HOME": ".devbox/search"
   },
   "shell": {
-    "init_hook": ["bundle install", "poetry shell"],
+    "init_hook": [],
     "scripts": {
+      "shell": ["bundle install", "poetry shell"],
       "test": ["echo \"Error: no test specified\" && exit 1"]
     }
   }

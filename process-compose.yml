@@ -6,3 +6,9 @@ processes:
     availability:
       restart: "always"
 
+  search:
+    command: docker run --rm -t --name es01 -p 9200:9200 -m 1GB -e "xpack.security.enabled=false" -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:8.11.1
+    working_dir: .
+    availability:
+      restart: "always"
+
