@@ -1,0 +1,47 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "postgresql@latest": {
+      "last_modified": "2023-11-24T00:36:48Z",
+      "plugin_version": "0.0.2",
+      "resolved": "github:NixOS/nixpkgs/8b8c9407844599546393146bfac901290e0ab96b#postgresql",
+      "source": "devbox-search",
+      "version": "15.5",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/d7fbzdcxqdzbr2685xv734y26p520m7d-postgresql-15.5"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/vgz65fw2xaxc0nm87z85hpc2wqrcfv5b-postgresql-15.5"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/s241wqjizz77lgvkw7yj2ghpsld5bcl9-postgresql-15.5"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/hxpwfhslscfak9vh9ksxbzzpbkqlspgh-postgresql-15.5"
+        }
+      }
+    },
+    "ruby@3.2.2": {
+      "last_modified": "2023-11-17T14:14:56Z",
+      "plugin_version": "0.0.2",
+      "resolved": "github:NixOS/nixpkgs/a71323f68d4377d12c04a5410e214495ec598d4c#ruby_3_2",
+      "source": "devbox-search",
+      "version": "3.2.2",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/hff15k475cbvi9kx350g8ha2ayqycmss-ruby-3.2.2"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/2cjnl2sxyd2kr1lnwswfcim2p98wzill-ruby-3.2.2"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/v7adxlgsgyas0zwirfssh2pyi9icfpk5-ruby-3.2.2"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/cym9m41909x2fihq7xrzv5vivjjf60gj-ruby-3.2.2"
+        }
+      }
+    }
+  }
+}

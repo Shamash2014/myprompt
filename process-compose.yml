@@ -1,0 +1,8 @@
+version: '0.5'
+
+processes:
+  rails: 
+    command: bin/rails server
+    availability:
+      restart: "always"
+
