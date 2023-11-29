@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "myprompt"
+version = "0.1.0"
+description = ""
+authors = ["Shamash2014 <warp.buddhist@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+streamlit = "^1.28.2"
+dlt = {extras = ["parquet", "postgres"], version = "^0.3.25"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

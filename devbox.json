@@ -1,12 +1,17 @@
 {
-  "packages": ["postgresql@latest", "ruby@3.2.2"],
+  "packages": [
+    "postgresql@latest",
+    "ruby@3.2.2",
+    "python3@latest",
+    "poetry@latest"
+  ],
   "env": {
-    "DATABASE_HOST": "localhost",
-    "DATABASE_USER": "root",
+    "DATABASE_HOST":     "localhost",
+    "DATABASE_USER":     "root",
     "DATABASE_PASSWORD": "password"
   },
   "shell": {
-    "init_hook": ["bundle install"],
+    "init_hook": ["bundle install", "poetry shell"],
     "scripts": {
       "test": ["echo \"Error: no test specified\" && exit 1"]
     }

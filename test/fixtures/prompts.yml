@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  prompt: MyText
+  _dlt_id: MyString
+  _dlt_load_id: MyString
+
+two:
+  prompt: MyText
+  _dlt_id: MyString
+  _dlt_load_id: MyString
