@@ -2,7 +2,7 @@ version: '0.5'
 
 processes:
   vite:
-    command: bin/vite dev
+    command: npx turbo dev 
     availability:
       restart: "always"
   rails: 
