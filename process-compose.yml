@@ -1,6 +1,10 @@
 version: '0.5'
 
 processes:
+  vite:
+    command: bin/vite dev
+    availability:
+      restart: "always"
   rails: 
     command: bin/rails server
     availability:
