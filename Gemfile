@@ -4,6 +4,7 @@ ruby "3.2.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.2"
+gem 'rack-cors'
 gem 'elasticsearch-rails'
 gem 'elasticsearch-model'
 # Use postgresql as the database for Active Record

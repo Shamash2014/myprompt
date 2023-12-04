@@ -1,6 +1,6 @@
 import { Card, CardBody, Input } from "@nextui-org/react";
 import { SearchIcon } from "./SearchIcon";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 function App() {
   const [prompts, setPrompts] = useState([]);
   const calculatePrompts = (value) => {
@@ -9,24 +9,27 @@ function App() {
       .then((data) => setPrompts(data));
   };
 
+  useEffect(() => {
+    calculatePrompts("anime")
+  }, [])
+
   return (
-    <div className="bg-gradient-to-tr from-pink-500 to-yellow-500 shadow-lg w-screen h-screen">
+    <div className="bg-gradient-to-tr from-pink-500 to-yellow-500 shadow-lg w-screen h-full">
       <div className="w-full px-8 rounded-2xl flex justify-center items-center text-white container mx-auto">
         <Input
           label="Search"
           isClearable
           radius="lg"
+          defaultValue="anime"
           onValueChange={calculatePrompts}
           classNames={{
             label: "text-black/50 dark:text-white/90",
             input: [
-              "bg-transparent",
               "text-black/90 dark:text-white/90",
               "placeholder:text-default-700/50 dark:placeholder:text-white/60",
             ],
-            innerWrapper: "bg-transparent",
+            innerWrapper: "bg-transparent flex py-6 space-around",
             inputWrapper: [
-              "shadow-xl",
               "mt-[200px]",
               "bg-default-200/50",
               "dark:bg-default/60",
@@ -41,7 +44,7 @@ function App() {
           }}
           placeholder="Type to search..."
           startContent={
-            <SearchIcon className="text-black/50 mb-0.5 dark:text-white/90 text-slate-400 pointer-events-none flex-shrink-0" />
+            <SearchIcon className="mx-4 text-black/50 mb-0.5 dark:text-white/90 text-slate-400 pointer-events-none flex-shrink-0" />
           }
         />
       </div>
