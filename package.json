@@ -2,6 +2,11 @@
   "workspaces": [
     "packages/*"
   ],
+"scripts": {
+    "build": "npx turbo build",
+    "deploy": "cp -a packages/main/build/. public/",
+    "heroku-postbuild": "yarn build && yarn deploy"
+  },
   "devDependencies": {
     "turbo": "^1.10.16"
   }
