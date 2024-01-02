@@ -6,7 +6,7 @@ function App() {
   const calculatePrompts = (value) => {
     fetch(`http://localhost:3000/api/v1/prompts?q=${value}`)
       .then((res) => res.json())
-      .then((data) => setPrompts(data));
+      .then((data) => setPrompts(data ?? []));
   };
 
   useEffect(() => {
