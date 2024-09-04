@@ -1,5 +1,5 @@
 FROM node:20 as node
-FROM ruby:3.2.2
+FROM ruby:3.3.5
 
 WORKDIR /app
 
