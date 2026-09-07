@@ -3,7 +3,7 @@
     "postgresql@latest",
     "ruby@3.2.2",
     "python3@latest",
-    "poetry@latest"
+    "poetry@1.8.5"
   ],
   "env": {
     "ES_HOME": ".devbox/search"
