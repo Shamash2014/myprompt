@@ -1,7 +1,7 @@
 {
   "packages": [
     "postgresql@latest",
-    "ruby@3.2.2",
+    "ruby@3.4.9",
     "python3@latest",
     "poetry@latest"
   ],
