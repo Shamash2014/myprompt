@@ -1,9 +1,37 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "glibcLocales@latest": {
+      "last_modified": "2026-11-11T14:42:58Z",
+      "resolved": "github:NixOS/nixpkgs/9397dcb09c9598a33509fbc0cce699bd4e6c84d5#glibcLocales",
+      "source": "devbox-search",
+      "version": "2.44-57",
+      "systems": {
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/m2qq5ix2bsqrp935i1s20dcyxfgk31dl-glibc-locales-2.44-57",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/m2qq5ix2bsqrp935i1s20dcyxfgk31dl-glibc-locales-2.44-57"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/57v3qb3a5ldwp0vddj1lr8xhvlw8473h-glibc-locales-2.44-57",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/57v3qb3a5ldwp0vddj1lr8xhvlw8473h-glibc-locales-2.44-57"
+        }
+      }
+    },
     "poetry@latest": {
       "last_modified": "2023-11-23T16:10:41Z",
-      "plugin_version": "0.0.4",
+      "plugin_version": "0.0.6",
       "resolved": "github:NixOS/nixpkgs/e8b0430bc4c4235607ae102010dec2ba32e8c0ca#poetry",
       "source": "devbox-search",
       "version": "1.7.0",
@@ -45,7 +73,7 @@
     },
     "python3@latest": {
       "last_modified": "2023-11-17T14:14:56Z",
-      "plugin_version": "0.0.3",
+      "plugin_version": "0.0.5",
       "resolved": "github:NixOS/nixpkgs/a71323f68d4377d12c04a5410e214495ec598d4c#python3",
       "source": "devbox-search",
       "version": "3.11.6",
@@ -64,24 +92,54 @@
         }
       }
     },
-    "ruby@3.2.2": {
-      "last_modified": "2023-11-17T14:14:56Z",
+    "ruby@3.4.12": {
+      "last_modified": "2026-11-11T14:42:58Z",
       "plugin_version": "0.0.2",
-      "resolved": "github:NixOS/nixpkgs/a71323f68d4377d12c04a5410e214495ec598d4c#ruby_3_2",
+      "resolved": "github:NixOS/nixpkgs/9397dcb09c9598a33509fbc0cce699bd4e6c84d5#ruby",
       "source": "devbox-search",
-      "version": "3.2.2",
+      "version": "3.4.12",
       "systems": {
         "aarch64-darwin": {
-          "store_path": "/nix/store/hff15k475cbvi9kx350g8ha2ayqycmss-ruby-3.2.2"
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/76901pzii8nlq7mqbdmp4bgc3g3kdnca-ruby-3.4.12",
+              "default": true
+            },
+            {
+              "name": "devdoc",
+              "path": "/nix/store/hikdrkxskc9j8b7yzginin4nd7ylq5b5-ruby-3.4.12-devdoc"
+            }
+          ],
+          "store_path": "/nix/store/76901pzii8nlq7mqbdmp4bgc3g3kdnca-ruby-3.4.12"
         },
         "aarch64-linux": {
-          "store_path": "/nix/store/2cjnl2sxyd2kr1lnwswfcim2p98wzill-ruby-3.2.2"
-        },
-        "x86_64-darwin": {
-          "store_path": "/nix/store/v7adxlgsgyas0zwirfssh2pyi9icfpk5-ruby-3.2.2"
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/n0flkmwlycpms96xv3fky17angp6ds81-ruby-3.4.12",
+              "default": true
+            },
+            {
+              "name": "devdoc",
+              "path": "/nix/store/s0rk1m3a8kfsf79f20k2hmpipwg94ygy-ruby-3.4.12-devdoc"
+            }
+          ],
+          "store_path": "/nix/store/n0flkmwlycpms96xv3fky17angp6ds81-ruby-3.4.12"
         },
         "x86_64-linux": {
-          "store_path": "/nix/store/cym9m41909x2fihq7xrzv5vivjjf60gj-ruby-3.2.2"
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/qarsidr8bx456z5kbrdaikg8jgsz22lv-ruby-3.4.12",
+              "default": true
+            },
+            {
+              "name": "devdoc",
+              "path": "/nix/store/wv3y34mfabbz58wc32b9vaih94932f4a-ruby-3.4.12-devdoc"
+            }
+          ],
+          "store_path": "/nix/store/qarsidr8bx456z5kbrdaikg8jgsz22lv-ruby-3.4.12"
         }
       }
     }
